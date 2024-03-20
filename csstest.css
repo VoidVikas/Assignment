@@ -1,0 +1,98 @@
+/* Define font family and reset margin and padding for the entire document */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+  body {
+    background: #ffffff url("") no-repeat center;
+   ; /* Set the width and height of the background image */
+}
+
+}
+
+  
+}
+
+/* Styles for the header section */
+.header {
+    background-color: #3; /* Background color */
+    color: #fff; /* Text color */
+    padding: 1rem; /* Padding */
+    text-align: center; /* Center align text */
+}
+
+/* Styles for sections with class 'section' */
+.section {
+    margin: 2rem; /* Margin */
+}
+
+/* Styles for headings within sections */
+.section h2 {
+    margin-top: 0; /* Remove top margin */
+}
+
+/* Styles for sections with class 'about-us' and 'contact-us' */
+.about-us, .contact-us {
+    background-color: #eee; /* Background color */
+    padding: 1rem; /* Padding */
+}
+
+/* Styles for sections with class 'donation' */
+.donation {
+    background-color: #ddd; /* Background color */
+    padding: 1rem; /* Padding */
+}
+
+/* Styles for sections with class 'streaming' */
+.streaming {
+    background-color: #ccc; /* Background color */
+    padding: 1rem; /* Padding */
+}
+
+/* Styles for images with class 'align-left' */
+img.align-left {
+    float: left; /* Float to the left */
+    margin-right: 20px; /* Right margin for spacing */
+}
+
+/* Styles for the search bar */
+.search-bar {
+    margin-right: auto; /* Push search bar to the right */
+}
+
+/* Styles for the input field within the search bar */
+.search-bar input[type="text"] {
+    padding: 5px; /* Padding */
+    border-radius: 5px; /* Border radius */
+    border: 1px solid #ccc; /* Border */
+    margin-right: 5px; /* Right margin */
+    width: 100px; /* Width */
+}
+
+/* Styles for the button within the search bar */
+.search-bar button {
+    padding: 5px 5px; /* Padding */
+    border-radius: 5px; /* Border radius */
+    background-color: #CDEF3F; /* Background color */
+    border: none; /* No border */
+    color: #5D6038; /* Text color */
+    cursor: pointer; /* Cursor style */
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5); /* Add drop shadow */
+    padding: 5px 10px; /* Padding */
+    background-color: white; /* Background color */
+    border-radius: 5px; /* Border radius */
+    margin-right: 10px; /* Right margin */
+}
+
+/* Hover styles for the button within the search bar */
+.search-bar button:hover {
+    background-color: #AABF2A; /* Background color on hover */
+}
+img.img1{width:987px; height:652px; left:500px; top:100px;}
+img.align-center{display:block; margin: 0px auto;}
+img.align-left{float:left; margin-left:5px;}
+img.img2{width:150px; height:150px; left:500px; top:100px;}
+}
+

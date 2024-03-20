@@ -1,0 +1,156 @@
+<!DOCTYPE html> <!-- Define document type -->
+<html lang="en"> <!-- Specify language for the document -->
+
+<head>
+    <title>index</title> <!-- Title of the document -->
+    <link rel="stylesheet" type="text/css" href="csstest.css" /> <!-- Link to external CSS file -->
+    <style>
+        /* CSS Styles for the document */
+        body {
+
+            background-color: #B5C447;
+            /* Background color for the body */
+
+            color: #5D6038;
+            /* Text color */
+            font-family: Arial, sans-serif;
+            /* Font family */
+            text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+            /* Add drop shadow behind the text */
+        }
+
+        .header {
+            background-color: #CDEF3F;
+            /* Background color for header */
+            padding: 0px;
+            /* Padding */
+            display: flex;
+            /* Display as flexbox */
+            font-color: #5D6038;
+            /* Text color */
+            align-items: center;
+            /* Align items in center */
+        }
+
+        .logo {
+            align-items: center;
+            /* Align items in center */
+            float: left;
+            /* Float to the left */
+            margin-left: 20px;
+            /* Left margin */
+            margin-top: 20px;
+            /* Top margin */
+        }
+
+        .nav-links {
+            display: flex;
+            /* Display as flexbox */
+            justify-content: center;
+            /* Justify content to center */
+            flex-grow: 1;
+            /* Grow to fill remaining space */
+            color: #5D6038;
+            /* Text color */
+            text-decoration: none;
+            /* Remove underline */
+        }
+
+        .nav-link {
+            color: #5D6038;
+            /* Text color */
+            text-decoration: none;
+            /* Remove underline */
+            margin: 0 10px;
+            /* Margin */
+            padding: 5px 30px;
+            /* Padding */
+            background-color: white;
+            /* Background color */
+            border-radius: 5px;
+            /* Border radius */
+        }
+
+        .nav-link:hover {
+            text-decoration: none;
+            /* Remove underline */
+        }
+
+        .dropdown {
+            position: relative;
+            /* Position relative */
+            display: inline-block;
+            /* Display as inline block */
+            text-decoration: none;
+            /* Remove underline */
+        }
+
+        .dropdown-content {
+            display: none;
+            /* Initially hidden */
+            position: absolute;
+            /* Position absolute */
+            background-color: green;
+            /* Background color */
+            min-width: 120px;
+            /* Minimum width */
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            /* Box shadow */
+            z-index: 1;
+            /* Z-index */
+            text-decoration: none;
+            /* Remove underline */
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+            /* Display block on hover */
+
+        }
+
+        .Text {
+            color: #DCE0CA;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header"> <!-- Header section -->
+        <div class="logo"> <!-- Logo section -->
+            <img src="logo1.png" height="100px" width="60px" alt="logo"> <!-- Logo image -->
+            <h1></h1> <!-- Heading -->
+        </div>
+        <div class="nav-links"> <!-- Navigation links -->
+            <a class="nav-link" href="home.html">Home</a> <!-- Home link -->
+            <a class="nav-link" href="donation.html">Donation</a> <!-- Donation link -->
+            <a class="nav-link" href="signup.html">Sign Up</a> <!-- Sign Up link -->
+            <div class="dropdown"> <!-- Dropdown menu -->
+                <div>
+                    <a class="nav-link" href="streamers.html">Streamers</a> <!-- Streamers link -->
+                </div>
+                <div class="dropdown-content"> <!-- Dropdown content -->
+                    <a href="live_streaming.html">Live Streaming</a> <!-- Live streaming link -->
+                </div>
+            </div>
+            <a class="nav-link" href="aboutus.html">About Us</a> <!-- About Us link -->
+            <a class="nav-link" href="contactus.html">Contact Us</a> <!-- Contact Us link -->
+        </div>
+        <div class="search-bar"> <!-- Search bar -->
+            <input type="text" placeholder="Search..."> <!-- Input field for search -->
+            <button type="submit">Search</button> <!-- Search button -->
+        </div>
+    </div>
+    <h1 style="text-align:center;background-color:#5D6038; color:#DCE0CA; padding: 5px; /* Padding */
+    border-radius: 10px; /* Border radius */
+    border: 1px solid #ccc; /* Border */
+    margin-right: 5px;margin-left:5px ;text-shadow: 0px 0px 20px white;">Gaming makes life easier</h1>
+
+
+    <img class="img2 , align-left" , src="gaming1.jpg" , alt="this is the ai image; margin-left:5px ;">
+    <img class="img1 align-center" src="pc.png" alt="this is the ai images" style="opacity: 0.4;">
+
+
+    </div>
+</body>
+
+</html>
