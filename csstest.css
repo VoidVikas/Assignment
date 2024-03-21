@@ -39,10 +39,7 @@ body {
     padding: 1rem; /* Padding */
 }
 
-/* Styles for sections with class 'donation' */
-.donation {
-    background-color: #ddd; /* Background color */
-    padding: 1rem; /* Padding */
+
 }
 
 /* Styles for sections with class 'streaming' */
@@ -95,4 +92,17 @@ img.align-center{display:block; margin: 0px auto;}
 img.align-left{float:left; margin-left:5px;}
 img.img2{width:150px; height:150px; left:500px; top:100px;}
 }
-
+.niveg{
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+backdrop-filter: blur(16px) saturate(180%);
+-webkit-backdrop-filter: blur(16px) saturate(180%);
+background-color: rgba(192, 192, 192, 0.25);
+border-radius: 12px;
+border: 1px solid rgba(255, 255, 255, 0.125);
+font-family: 'Courier New', Courier, monospace;
+color: white;
+padding: 25px;
+}
