@@ -1,0 +1,264 @@
+.header {
+    background-color: #3f4819;
+
+    background-image: url("bg2-01.jpg");
+    /* Background color for header */
+    padding: 0px;
+    /* Padding */
+    display: flex;
+    /* Display as flexbox */
+    color: #5D6038;
+    /* Text color */
+    align-items: center;
+    /* Align items in center */
+}
+
+.logo {
+    align-items: center;
+    /* Align items in center */
+    float: left;
+    /* Float to the left */
+    margin-left: 20px;
+    /* Left margin */
+    margin-top: 20px;
+    /* Top margin */
+}
+
+.nav-links {
+    display: flex;
+    /* Display as flexbox */
+    justify-content: center;
+    /* Justify content to center */
+    flex-grow: 1;
+    /* Grow to fill remaining space */
+    color: #5D6038;
+    /* Text color */
+    text-decoration: none;
+    /* Remove underline */
+}
+
+.nav-link {
+    color: #5D6038;
+    /* Text color */
+    text-decoration: none;
+    /* Remove underline */
+    margin: 0 10px;
+    /* Margin */
+    padding: 5px 30px;
+    /* Padding */
+    background-color: white;
+    /* Background color */
+    border-radius: 5px;
+    font-family: 'font3', sans-serif; 
+    /* Border radius */
+}
+
+.nav-link:hover {
+    text-decoration: none;
+    /* Remove underline */
+}
+
+.dropdown {
+    position: relative;
+    /* Position relative */
+    display: inline-block;
+    /* Display as inline block */
+    text-decoration: none;
+    /* Remove underline */
+}
+
+.dropdown-content {
+    display: none;
+    /* Initially hidden */
+    position: absolute;
+    /* Position absolute */
+    background-color: green;
+    /* Background color */
+    min-width: 120px;
+    /* Minimum width */
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    /* Box shadow */
+    z-index: 1;
+    /* Z-index */
+    text-decoration: none;
+    /* Remove underline */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    /* Display block on hover */
+
+}
+
+.Text {
+    color: #DCE0CA;
+}
+
+.search-bar {
+    margin-right: auto; /* Push search bar to the right */
+}
+
+/* Styles for the input field within the search bar */
+.search-bar input[type="text"] {
+    padding: 5px; /* Padding */
+    border-radius: 5px; /* Border radius */
+    border: 1px solid #ccc; /* Border */
+    margin-right: 5px; /* Right margin */
+    width: 100px; /* Width */
+}
+
+/* Styles for the button within the search bar */
+.search-bar button {
+    padding: 5px 5px; /* Padding */
+    border-radius: 5px; /* Border radius */
+    background-color: #CDEF3F; /* Background color */
+    border: none; /* No border */
+    color: #5D6038; /* Text color */
+    cursor: pointer; /* Cursor style */
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5); /* Add drop shadow */
+    padding: 5px 10px; /* Padding */
+    background-color: white; /* Background color */
+    border-radius: 5px; /* Border radius */
+    margin-right: 10px; /* Right margin */
+}
+
+/* Hover styles for the button within the search bar */
+.search-bar button:hover {
+    background-color: #AABF2A; /* Background color on hover */}
+
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    
+    header {
+        background-color: #343a40;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+    }
+    
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 50px 0;
+    }
+    
+    .info {
+        flex: 1;
+        padding: 0 20px;
+        position: relative; /* Add position relative for overlay positioning */
+    }
+    
+    .info .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    }
+    
+    .info h2 {
+        color: #fff; /* Set text color to white */
+        z-index: 1; /* Ensure text is above overlay */
+    }
+    
+    .image {
+        flex: 1;
+        text-align: center;
+    }
+    
+    .image img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    footer {
+        background-color: #343a40;
+        color: rgb(255, 254, 254);
+        text-align: center;
+        padding: 10px 0;
+    
+    }
+    .container1 {
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(rgba(0,0,0,0.7), #000000b3), url('bg4.jpg');
+        background-position: center;
+        background-size: cover;
+        
+    }
+
+   .row{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    font-family: 'font3', sans-serif; /* Font family */
+   }
+   @font-face {
+    font-family: 'font3';
+    src: url('font3.ttf') format('truetype');
+}
+   .col{
+     padding-right: 4;
+     margin-left: 10%;
+     margin-right: 50px;
+     font-family: 'font3', sans-serif; /* Font family */
+     background-color:#357534;
+     border-radius: 30px;
+    text-align: center;
+   }
+
+   h1{
+    color: #fbeedc;
+    font-size: 50px;
+   }
+.div1 {
+    
+    width: 200px;
+    height: 250px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-color: rgb(56, 85, 36);
+    color: #fbeedc;
+    background-position: center;
+    background-size: cover;
+    overflow: auto; /* Hide the scroll bar */
+}
+
+.div1::-webkit-scrollbar {
+    display: none;
+}
+
+.div1:hover {
+    background-color: #5e296580; /* Change to desired hover color */
+    transition: background-color 0.4s ease; /* Adding transition for smooth color change */
+}
+    .div2 {
+    
+        width: 300px;
+        height: 100px;
+        display:;
+        border-radius: 10px;
+        padding: 15px 20px;
+        box-sizing: border-box;
+        cursor: pointer;
+        margin: 10px 15px;
+        background-color: rgb(56, 85, 36);
+        color: #fbeedc;
+        background-position: center;
+        background-size: cover;
+        overflow: auto; /* Hide the scroll bar */
+        margin-top: 35%;
+        background-position: center;
+        
+    }
+    
+

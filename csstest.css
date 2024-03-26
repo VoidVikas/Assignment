@@ -6,21 +6,18 @@ body {
 }
 
   body {
-    background: #ffffff url("") no-repeat center;
+    background: #f8f3f3 url("") no-repeat center;
    ; /* Set the width and height of the background image */
 }
 
-}
-
-  
-}
 
 /* Styles for the header section */
 .header {
-    background-color: #3; /* Background color */
+    background-color: #307070; /* Background color */                                                                            
     color: #fff; /* Text color */
     padding: 1rem; /* Padding */
     text-align: center; /* Center align text */
+    
 }
 
 /* Styles for sections with class 'section' */
@@ -39,8 +36,6 @@ body {
     padding: 1rem; /* Padding */
 }
 
-
-}
 
 /* Styles for sections with class 'streaming' */
 .streaming {
@@ -89,20 +84,288 @@ img.align-left {
 }
 img.img1{width:987px; height:652px; left:500px; top:100px;}
 img.align-center{display:block; margin: 0px auto;}
-img.align-left{float:left; margin-left:5px;}
-img.img2{width:150px; height:150px; left:500px; top:100px;}
+img.align-left{float:left; margin-left:10px;}
+img.img2{width:150px; height:150px; left:500px; top:10px;}
+.custom-position {
+    position: absolute;
+
+    bottom: -0%;
+    transform: translateY(-0%); /* Center vertically */
+    right: 0%; /* Position to the right */
+    margin-right: 10px;
 }
-.niveg{
-position: fixed;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-backdrop-filter: blur(16px) saturate(180%);
--webkit-backdrop-filter: blur(16px) saturate(180%);
-background-color: rgba(192, 192, 192, 0.25);
-border-radius: 12px;
-border: 1px solid rgba(255, 255, 255, 0.125);
-font-family: 'Courier New', Courier, monospace;
-color: white;
-padding: 25px;
+
+
+@font-face {
+    font-family: 'font3';
+    src: url('font3.ttf') format('truetype');
+}
+
+.text-style {
+    font-size: 20px; /* Font size */
+    font-weight: bold; /* Font weight */
+    text-decoration: none; /* Text decoration */
+    color: #452d35; /* Text color */
+    font-family: 'font3', sans-serif; /* Font family */
+    letter-spacing: 0px; /* Letter spacing */
+    line-height: 1.5; /* Line height */
+    text-transform: ; /* Text transform */
+     margin-right: 5px;
+                margin-left: 5px;
+                text-shadow: 0px 0px 2px rgb(190, 29, 29);
+}
+@font-face {
+    font-family: 'font4';
+
+    src: url('font4.otf') format('truetype');
+}
+.text-style1{font-size: 20px; /* Font size */
+    font-weight:normal; /* Font weight */
+    text-decoration: none; /* Text decoration */
+    color: #022207; /* Text color */
+    font-family: 'font4', sans-serif; /* Font family */
+    letter-spacing: 0px; /* Letter spacing */
+    line-height: 1.5; /* Line height */
+    text-transform: ; /* Text transform */
+     margin-right: 5px;
+                margin-left: 5px;
+                text-shadow: 0px 0px 1px rgb(32, 152, 32);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+}
+
+.box {
+    width: 150px;
+    height: 50px;
+    background-color: #dfdbdb;
+    display: flex;
+    color: #eee;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: 2px solid #57871b; /* Add border */
+    border-radius: 15px; /* Add border radius */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1), 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add drop shadow */
+}
+
+.arrow {
+    font-size: 24px;
+}
+
+.arrow:not(:last-child) {
+    margin-right: 10px;
+}
+
+.box:hover {
+    background-color: #95bc34;
+  }
+
+.signin-btn {
+    display: block;
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: #dfdbdb;
+    border: 2px solid #005603;
+    border-radius: 25px;
+    text-decoration: none;
+    color: #eee;
+    font-weight: bold;
+    margin: 0 auto;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Added transform transition */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1), 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    animation: zoomInOut 2s infinite alternate; /* Added animation */
+}
+
+@keyframes zoomInOut {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+  
+  .signin-btn:hover {
+    background-color: #374b03; /* Change color on hover */
+  }
+  
+  .image-overlay1 {
+    background-color: rgba(191, 239, 163, 0.2);
+    backdrop-filter: blur(10px);
+    width: 500px;
+    height: 170px;
+    border: 2px solid #005603; /* Add border */
+    position: absolute;
+    top: 46%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
+    overflow: auto;
+    transition: background-color 0.3s ease; /* Adding transition for smooth color change */
+}
+
+.image-overlay1:hover {
+    background-color: #26491280; /* Change to desired hover color */
+}
+
+.image-overlay1:nth-child(2) {
+    left: 6%; /* Adjusted position for the second div */
+}
+.image-overlay {
+    background-color: rgba(191, 239, 163, 0.2);
+    backdrop-filter: blur(10px);
+    width: 500px;
+    height: 170px;
+    border: 2px solid #005603; /* Add border */
+    position: absolute;
+    top: 46%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
+    overflow: auto;
+    transition: background-color 0.3s ease; /* Adding transition for smooth color change */
+}
+
+.image-overlay:hover {
+    background-color: #26491280; /* Change to desired hover color */
+}
+
+.image-overlay:nth-child(2) {
+    left: 65%; /* Adjusted position for the second div */
+}
+
+.image-overlay::-webkit-scrollbar {
+    display: none;
+}
+.image-overlay2 {
+    background-color: rgba(191, 239, 163, 0.2);
+    backdrop-filter: blur(10px);
+    width: 500px;
+    height: 170px;
+    position:absolute;
+    top: 70%;
+    left: 30%;
+    transform: translate(-0%, -50%);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border: 2px solid #005603; /* Add border */
+    border-radius: 25px;
+    overflow: auto;
+    transition: background-color 0.3s ease; /* Adding transition for smooth color change */
+}
+
+.image-overlay2:hover {
+    background-color: #26491280; /* Change to desired hover color */
+}
+.image-overlay2::-webkit-scrollbar {
+    display: none;
+}
+.image-overlay3 {
+    background-color: #5D6038;
+    width: 300px;
+    height: 85px;
+    position: absolute;
+    top: 100%;
+    left: 48%;
+    transform: translate(-50%, -50%) perspective(1000px) rotateY(10deg); /* Applying perspective and rotation */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border: 2px solid #ebeccb; /* Add border */
+    border-radius: 25px;
+    overflow: auto;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Adding transition for smooth color change and transform */
+    animation: autoAnimation 2s infinite alternate; /* Adding animation */
+}
+
+@keyframes autoAnimation {
+    0% {
+        transform: translate(-50%, -50%) perspective(1000px) rotateY(10deg);
+    }
+    50% {
+        transform: translate(-50%, -50%) perspective(1000px) rotateY(-10deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) perspective(1000px) rotateY(10deg);
+    }
+}
+
+.image-overlay3:hover {
+    background-color: rgba(191, 239, 163, 0.5); /* Change to desired hover color */
+   
+}
+.card {
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+/* Generated by https://generator.ui.glass/ */
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    border: px solid rgba(255, 255, 255, 0.125);
+}
+
+/* Donation container */
+.donation-container {
+    /* Glassmorphism card effect */
+.card {
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(192, 192, 192, 0.25);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    padding: 25px;
+}
+
+/* Input submit button */
+.form input[type="submit"] {
+    height: 35px;
+    border-radius: 10px;
+}
+
+/* Donation container */
+.donation-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(192, 192, 192, 0.25);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    padding: 25px;
 }

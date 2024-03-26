@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Active Text Field Label Animation</title>
+<style>
+  body {
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  .glass-container {
+    background-color: rgba(255, 255, 255, 0.9); /* Adjust transparency for glass effect */
+    backdrop-filter: blur(10px); /* Add blur effect */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  }
+
+  .form-group {
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+  .form-group input[type="text"],
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: none; /* Remove the border */
+    border-bottom: 1px solid #ccc; /* Show only the bottom border */
+    border-radius: 0; /* Remove border-radius */
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    background-color: transparent; /* Make input background transparent */
+  }
+
+  .form-group label {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: #999;
+    transition: all 0.3s ease;
+  }
+
+  .form-group input[type="text"]:focus + label,
+  .form-group textarea:focus + label {
+    top: 5px;
+    font-size: 12px;
+    color: #4285f4;
+  }
+
+  .form-group input[type="text"]:focus,
+  .form-group textarea:focus {
+    border-color: #4285f4; /* Change bottom border color on focus */
+    outline: none; /* Remove outline */
+  }
+
+  .button-container {
+    text-align: center;
+  }
+
+  .button-container input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4285f4;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .button-container input[type="submit"]:hover {
+    background-color: #3c78d8;
+  }
+</style>
+</head>
+<body>
+
+<div class="glass-container">
+  <form>
+    <div class="form-group">
+      <input type="text" id="name" required>
+      <label for="name">Name</label>
+    </div>
+
+    <div class="form-group">
+        <input type="text" id="email" required>
+        <label for="email">Email</label>
+    </div>
+
+    <div class="form-group">
+        <textarea id="message" required></textarea>
+        <label for="message">Message</label>
+    </div>
+
+    <div class="button-container">
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Video Playroom</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .video-form {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .video-form label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .video-form input[type="text"] {
+            width: 300px;
+            padding: 5px;
+            font-size: 14px;
+        }
+
+        .video-form button {
+            padding: 5px 10px;
+            font-size: 14px;
+        }
+
+        #videoContainer {
+            text-align: center;
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+
+        #videoContainer iframe {
+            width: 100%;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Video Playroom</h1>
+
+    <div class="video-form">
+        <label for="videoUrl">Enter Video URL:</label>
+        <input type="text" id="videoUrl">
+        <button onclick="playVideo()">Play</button>
+    </div>
+
+    <div id="videoContainer"></div>
+
+    <script>
+        function playVideo() {
+            var videoUrl = document.getElementById("videoUrl").value;
+            var videoContainer = document.getElementById("videoContainer");
+
+            // Clear the video container
+            videoContainer.innerHTML = "";
+
+            // Create an iframe element
+            var iframe = document.createElement("iframe");
+            iframe.src = videoUrl;
+            iframe.width = "100%";
+            iframe.height = "400px";
+
+            // Append the iframe to the video container
+            videoContainer.appendChild(iframe);
+        }
+    </script>
+</body>
+</html>

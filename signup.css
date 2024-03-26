@@ -1,0 +1,227 @@
+body {
+    background-image: url(bj1-01.jpg);
+    background-size: cover;
+    background-position: center;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+
+flex-direction: column;
+border: px solid rgba(255, 255, 255, 0.125);
+ font-family: 'font3', sans-serif; /* Font family */
+
+}
+
+.container {
+    width: 300px;
+    padding: 35px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+    backdrop-filter: blur(16px) saturate(180%);
+-webkit-backdrop-filter: blur(16px) saturate(180%);
+background-color: rgba(192, 192, 192, 0.25);
+border-radius: 12px;
+border: 1px solid rgba(255, 255, 255, 0.125); 
+flex-direction: column;
+border: px solid rgba(255, 255, 255, 0.125);
+ font-family: 'font3', sans-serif; /* Font family */
+  font-family: 'font3', sans-serif; /* Font family */
+}
+
+.form-group {
+    margin-bottom: 15px;
+    font-family: 'font3', sans-serif; /* Font family */ 
+     font-family: 'font3', sans-serif; /* Font family */
+     color: #fbeedc;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.form-group button {
+    width: 100%;
+    padding: 8px;
+    background-color: #4CAF50;
+    color: #fbeedc;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-family: 'font3', sans-serif; /* Font family */
+}
+
+.form-group button:hover {
+    background-color: #45a049;
+}
+
+.forgot-password {
+    text-align: center;
+    margin-top: 10px;
+    color: #fbeedc;;
+}
+
+.forgot-password a {
+    color: #fbeedc;
+    text-decoration: none;
+    font-family: 'font3', sans-serif; /* Font family */
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    box-shadow: 0 0 10px rgba(7, 7, 7, 0.3);
+}
+
+
+.header {
+    background-color: #CDEF3F;
+
+    background-image: url("bg2-01.jpg");
+    /* Background color for header */
+    padding: 0px;
+    /* Padding */
+    display: flex;
+    /* Display as flexbox */
+    color: #5D6038;
+    /* Text color */
+    align-items: center;
+    /* Align items in center */
+}
+
+.logo {
+    align-items: center;
+    /* Align items in center */
+    float: left;
+    /* Float to the left */
+    margin-left: 20px;
+    /* Left margin */
+    margin-top: 20px;
+    /* Top margin */
+}
+
+.nav-links {
+    display: flex;
+    /* Display as flexbox */
+    justify-content: center;
+    /* Justify content to center */
+    flex-grow: 1;
+    /* Grow to fill remaining space */
+    color: #5D6038;
+    /* Text color */
+    text-decoration: none;
+    /* Remove underline */
+}
+
+.nav-link {
+    color: #5D6038;
+    /* Text color */
+    text-decoration: none;
+    /* Remove underline */
+    margin: 0 10px;
+    /* Margin */
+    padding: 5px 30px;
+    /* Padding */
+    background-color: white;
+    /* Background color */
+    border-radius: 5px;
+    font-family: 'font3', sans-serif; 
+    /* Border radius */
+}
+
+.nav-link:hover {
+    text-decoration: none;
+    /* Remove underline */
+}
+
+.dropdown {
+    position: relative;
+    /* Position relative */
+    display: inline-block;
+    /* Display as inline block */
+    text-decoration: none;
+    /* Remove underline */
+}
+
+.dropdown-content {
+    display: none;
+    /* Initially hidden */
+    position: absolute;
+    /* Position absolute */
+    background-color: green;
+    /* Background color */
+    min-width: 120px;
+    /* Minimum width */
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    /* Box shadow */
+    z-index: 1;
+    /* Z-index */
+    text-decoration: none;
+    /* Remove underline */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    /* Display block on hover */
+
+}
+
+.Text {
+    color: #DCE0CA;
+}
+
+.search-bar {
+    margin-right: auto; /* Push search bar to the right */
+}
+
+/* Styles for the input field within the search bar */
+.search-bar input[type="text"] {
+    padding: 5px; /* Padding */
+    border-radius: 5px; /* Border radius */
+    border: 1px solid #ccc; /* Border */
+    margin-right: 5px; /* Right margin */
+    width: 100px; /* Width */
+    font-family: 'font3', sans-serif; /* Font family */
+}
+
+/* Styles for the button within the search bar */
+.search-bar button {
+    padding: 5px 5px; /* Padding */
+    border-radius: 5px; /* Border radius */
+    background-color: #CDEF3F; /* Background color */
+    border: none; /* No border */
+    color: #5D6038; /* Text color */
+    cursor: pointer; /* Cursor style */
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5); /* Add drop shadow */
+    padding: 5px 10px; /* Padding */
+    background-color: white; /* Background color */
+    border-radius: 5px; /* Border radius */
+    margin-right: 10px; /* Right margin */
+}
+
+/* Hover styles for the button within the search bar */
+.search-bar button:hover {
+    background-color: #AABF2A; /* Background color on hover */
+}
+    @font-face {
+        font-family: 'font3';
+        src: url('font3.ttf') format('truetype');
+    }
